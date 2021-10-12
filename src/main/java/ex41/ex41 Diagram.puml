@@ -1,0 +1,10 @@
+@startuml
+
+class App {
+    +{static} void main(String[] args)
+    +{static} ArrayList readFile(String fileName): sortedNames
+    +{static} void writeFile(String fileName, ArrayList names, int length)
+    +{static} ArrayList sortNames(ArrayList names): names
+}
+
+@enduml

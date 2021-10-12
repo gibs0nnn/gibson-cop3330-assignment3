@@ -1,0 +1,26 @@
+@startuml
+
+class App {
+    +{static} void main(String[] args)
+    +{static} ProductAssets deserializeProducts(String file): products
+    +{static} void checkNames(ProductAssets products)
+}
+class ProductAssets {
+    -String name
+    -Products[] products
+    +ProductAssets(String name, Products[] products)
+    +void displayProducts()
+    +int returnArrayLength(): products.length
+    +String returnName(int i): products[i].mName
+    +double returnPrice(int i): (double) products[i].mPrice
+    +int returnQuantity(int i): (int) products[i].mQuantity
+}
+class Products {
+    +String mName
+    +double mPrice
+    +int mQuantity
+    +Products(String name, double price, int quantity)
+
+}
+
+@enduml

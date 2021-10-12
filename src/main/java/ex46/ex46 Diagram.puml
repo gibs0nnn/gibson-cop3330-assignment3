@@ -1,0 +1,10 @@
+@startuml
+class App {
+    +{static} void main(String[] args)
+    +{static} ArrayList<String> getFile(String dir): file
+    +{static} ArrayList<String> convWords(ArrayList<String> file): words
+    +{static} HashMap<String, Integer> wordFreq(ArrayList<String> wordFile): frequency
+    +{static} void printWordHash(HashMap<String, Integer> freq)
+    +{static} String spaceConv(int length): spaces
+}
+@enduml

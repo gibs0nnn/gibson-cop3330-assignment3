@@ -1,0 +1,8 @@
+@startuml
+
+class App {
+    +{static} void main(String[] args)
+    +{static} void createWebsite(String name, String author, Boolean JS, Boolean CSS)
+
+}
+@enduml

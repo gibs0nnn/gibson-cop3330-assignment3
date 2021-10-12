@@ -1,0 +1,11 @@
+@startuml
+
+class App {
+    +{static}void main(String[] args)
+    +{static}ArrayList fileReader(String fileName): userInfo
+    +{static}ArrayList organizeData(ArrayList<String> data): organizedData
+    +{static}String getSpaces(int letters): spaces
+    +{static}void displayData(ArrayList data)
+
+}
+@enduml

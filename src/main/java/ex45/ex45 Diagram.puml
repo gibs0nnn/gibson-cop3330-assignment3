@@ -1,0 +1,8 @@
+@startuml
+class App {
+    +{static} void main(String[] args)
+    +{static} ArrayList<String> getFile(String dir): file
+    +{static} ArrayList<String> switchWords(String original, String change, ArrayList<String> file): newFile
+    +{static} void writeFile(ArrayList<String> file, String dir)
+}
+@enduml
